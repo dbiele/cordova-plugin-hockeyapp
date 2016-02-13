@@ -73,4 +73,13 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <framework src="UIKit.framework" />
     </platform>
 
+  <!-- wp8 -->
+  <platform name="wp8">
+    <framework src="src/wp8/Microsoft.HockeyApp.Kit.dll" custom="true"></framework>
+  </platform>
+
+  <!-- Windows Phone 8.1+ -->
+  <platform name="windows">
+    <framework src="src/wp8/Microsoft.HockeyApp.Kit.dll" custom="true"></framework>
+  </platform>
 </plugin>
