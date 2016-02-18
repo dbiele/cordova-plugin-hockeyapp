@@ -5,7 +5,7 @@
 xmlns:android="http://schemas.android.com/apk/res/android"
       version="2.1.0">
     <name>HockeyApp</name>
-    <description>Cordova HockeyApp Plugin for android and ios. (hockeyapp sdk versions ios: 3.8.5 and android: 3.5.0)</description>
+    <description>Cordova HockeyApp Plugin for android, ios and windows. (hockeyapp sdk versions ios: 3.8.5, android: 3.5.0, windows:x.x.x)</description>
     <license>Apache 2.0</license>
     <keywords>cordova,hockeyapp</keywords>
     <author>Paul Panserrieu</author>
