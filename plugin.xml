@@ -75,11 +75,33 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
   <!-- wp8 -->
   <platform name="wp8">
-    <framework src="src/wp8/Microsoft.HockeyApp.Kit.dll" custom="true"></framework>
+    <config-file target="config.xml" parent="/*">
+      <feature name="HockeyApp">
+        <param name="wp-package" value="HockeyAppPlugin" />
+      </feature>
+    </config-file>
+
+    <config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
+      <Capability Name="ID_CAP_NETWORKING"/>
+      <Capability Name="ID_CAP_REMOVABLE_STORAGE"/>
+    </config-file>    
+
+    <source-file src="src/wp8/Microsoft.HockeyApp.Kit.dll"></source-file>
   </platform>
 
   <!-- Windows Phone 8.1+ -->
   <platform name="windows">
-    <framework src="src/wp8/Microsoft.HockeyApp.Kit.dll" custom="true"></framework>
+    <config-file target="config.xml" parent="/*">
+      <feature name="HockeyApp">
+        <param name="wp-package" value="HockeyAppPlugin" />
+      </feature>
+    </config-file>
+
+    <config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
+      <Capability Name="ID_CAP_NETWORKING"/>
+      <Capability Name="ID_CAP_REMOVABLE_STORAGE"/>
+    </config-file>    
+    
+    <source-file src="src/wp8/Microsoft.HockeyApp.Kit.dll"></source-file>
   </platform>
 </plugin>
